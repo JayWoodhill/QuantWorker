@@ -1,63 +1,45 @@
 [build-system]
-requires = ["setuptools>=61.0"]
+requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
 name = "quant_de"
 version = "0.1.0"
-description = "A low-latency data procurement application."
-readme = "README.rst"
-authors = [
-  {name = "Jay Woodhill", email = "jay.woodhill1@gmail.com"}
-]
-maintainers = [
-  {name = "Jay Woodhill", email = "jay.woodhill1@gmail.com"}
-]
+description = "Low-latency trading application for ASX derivatives."
+readme = "README.md"
+requires-python = ">=3.8"
+license = { text = "MIT" }
+authors = [{ name = "Jay Woodhill", email = "jay.woodhill1@gmail.com" }]
+homepage = "https://github.com/jaywoodhill/quant_de"
+keywords = ["trading", "FastAPI", "Click", "CLI", "ASX", "derivatives"]
 classifiers = [
-
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: MIT License",
+    "Operating System :: OS Independent",
+    "Development Status :: 4 - Beta",
+    "Intended Audience :: Developers",
+    "Topic :: Software Development :: Libraries",
 ]
-license = {text = "Apache Software License 2.0"}
+
 dependencies = [
-  
+    "click>=8.0.0,<9.0.0",
+    "fastapi>=0.75.0",
+    "rich==13.9.2",
+    "uvicorn>=0.18.2",
 ]
 
 [project.optional-dependencies]
 dev = [
-    "coverage",  # testing
-    "mypy",  # linting
-    "pytest",  # testing
-    "ruff"  # linting
+    "bump2version>=1.0.0",
+    "wheel>=0.38.4",
+    "watchdog>=2.3.0",
+    "tox>=4.0.0",
+    "coverage>=7.0.0",
+    "Sphinx==7.2.6",
+    "twine>=4.0.2",
+    "ruff>=0.0.277",
+    "pytest>=7.0.0",
 ]
 
-[project.urls]
-
-bugs = "https://github.com/JayWoodhill/quant_de/issues"
-changelog = "https://github.com/JayWoodhill/quant_de/blob/master/changelog.md"
-homepage = "https://github.com/JayWoodhill/quant_de"
-
-[tool.setuptools]
-package-dir = {"" = "src"}
-
-[tool.setuptools.package-data]
-"*" = ["*.*"]
-
-
-
-
-# Mypy
-# ----
-
-[tool.mypy]
-files = "."
-
-# Use strict defaults
-strict = true
-warn_unreachable = true
-warn_no_return = true
-
-[[tool.mypy.overrides]]
-# Don't require test functions to include types
-module = "tests.*"
-allow_untyped_defs = true
-disable_error_code = "attr-defined"
-
+[project.scripts]
+quant-de = "quant_de.cli:cli"
