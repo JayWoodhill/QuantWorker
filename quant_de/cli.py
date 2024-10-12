@@ -1,6 +1,5 @@
 """Console script for quant_de."""
 import quant_de
-
 import typer
 from rich.console import Console
 
