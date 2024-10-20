@@ -3,14 +3,14 @@ requires = ["setuptools>=61.0.0", "wheel"]
 build-backend = "setuptools.build_meta"
 
 [project]
-name = "quant_de"
+name = "QuantWorker"
 version = "0.1.0"
 description = "Low-latency trading application for ASX derivatives."
 readme = "README.md"
 requires-python = ">=3.8"
 license = { text = "MIT" }
 authors = [{ name = "Jay Woodhill", email = "jay.woodhill1@gmail.com" }]
-homepage = "https://github.com/jaywoodhill/quant_de"
+homepage = "https://github.com/jaywoodhill/QuantWorker"
 keywords = ["trading", "FastAPI", "Click", "CLI", "ASX", "derivatives"]
 classifiers = [
     "Programming Language :: Python :: 3",
@@ -42,4 +42,4 @@ dev = [
 ]
 
 [project.scripts]
-quant-de = "quant_de.cli:cli"
+QuantWorker = "QuantWorker.cli:cli"
