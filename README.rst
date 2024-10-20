@@ -31,11 +31,22 @@ Features
 --------
 
 * TODO
+- Update docs
+- Microservice list
+> ASX data stream ingestion application (Rust: listener, pipeline)
+> Testing API (Rust)
+> Decision making engine
+> Data store
+> Backtesting engine
+> Internal API gateway (Go or Node.js?)
+> Config/management module
+> Dockerise
 
-Credits
--------
+* Nice-to-have
+> Auth module
+> Integrate broker API for trade execution
+> External API
+> Customer web/application UI or analytics dashboard
 
-This package was created with Cookiecutter_ and the `audreyr/cookiecutter-pypackage`_ project template.
 
-.. _Cookiecutter: https://github.com/audreyr/cookiecutter
-.. _`audreyr/cookiecutter-pypackage`: https://github.com/audreyr/cookiecutter-pypackage
+
