@@ -31,10 +31,10 @@ Pending Features
 --------  
 
 TODO  
-- Update docs  
+* Update docs  
 - Microservice list  
 - ASX data stream ingestion application (Rust: listener, pipeline)  
-- Testing API (Rust)  
+* Testing API (Rust)  
 - Decision making engine  
 - Data store  
 - Backtesting engine  
