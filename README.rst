@@ -1,9 +1,11 @@
-.. image:: https://pyup.io/repos/github/JayWoodhill/QuantWorker/shield.svg
+![PyUp Status](https://pyup.io/repos/github/JayWoodhill/QuantWorker/shield.svg)
+
+# QuantWorker
 
 A low-latency data procurement application.
 
-* Free software: Apache Software License 2.0
-* Documentation: https://QuantWorker.readthedocs.io
+- **Free software**: Apache Software License 2.0
+- **Documentation**: [QuantWorker Docs](https://QuantWorker.readthedocs.io)
 
 Pending Features
 ----------------
