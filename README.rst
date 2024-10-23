@@ -22,16 +22,17 @@ Pending Features
 
 TODO
 ~~~~
-- **Update docs**
-- **Microservice list**:
-  - ASX data stream ingestion application (Rust: listener, pipeline)
-  - Testing API (Rust)
-  - Decision making engine
-  - Data store
-  - Backtesting engine
-  - Internal API gateway (Go or Node.js?)
-  - Config/management module
-  - Dockerise
+Microservices
+~~~~~~~~~~~~
+
+- ASX data stream ingestion application (Rust: listener, pipeline)
+- Testing API (Rust)
+- Decision making engine
+- Data store
+- Backtesting engine
+- Internal API gateway (Go or Node.js?)
+- Config/management module
+- Dockerise
 
 Nice-to-have
 ~~~~~~~~~~~~
