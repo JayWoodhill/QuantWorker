@@ -22,9 +22,6 @@ Pending Features
 
 TODO
 ~~~~
-Microservices
-~~~~~~~~~~~~
-
 - ASX data stream ingestion application (Rust: listener, pipeline)
 - Testing API (Rust)
 - Decision making engine
@@ -33,9 +30,6 @@ Microservices
 - Internal API gateway (Go or Node.js?)
 - Config/management module
 - Dockerise
-
-Nice-to-have
-~~~~~~~~~~~~
 - Auth module
 - Integrate broker API for trade execution
 - External API
