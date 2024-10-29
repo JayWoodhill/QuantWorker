@@ -13,7 +13,7 @@ QuantWorker
      :alt: Updates
 A low-latency data procurement application.  
   
-  
+   
 * Free software: Apache Software License 2.0  
 * Documentation: https://QuantWorker.readthedocs.io.  
 
